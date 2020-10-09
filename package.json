@@ -1,0 +1,16 @@
+{
+  "name": "drumkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d drgitumkit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://gurinderkaur0011.github.io/drumkit",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
