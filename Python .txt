@@ -1,0 +1,92 @@
+Python :
+
+	sets:
+		union of A & B-> All elements from both sets(excluding duplicates) 
+
+		a={2,3,6,4,8,8}
+		b={6,3,8,9,3,6,1}
+		c=a.union(b)
+		print(a)
+		print(b)
+		print(c)
+
+		Intersection: -> Common elements fron bot the sets
+
+		c=a.intersection(b)
+		print(c)
+
+		difference->Prints a set of elements that are only in a but not in b.
+
+		c=a.difference(b)
+
+		Symmetric difference-> returns elements in a and b but not in both(uncommon)
+
+		c=a.symmetric_difference(b)
+
+		--------------------------------------------------------------
+		Functions: what is a function?
+
+		A Function is a block of code which performs an operation and and may return a value.
+
+		Why should i use function?
+
+			. Code reusability
+			. Reability
+			. helps in avoiding redundency(duplicacy of code)
+			. Modularity-> allows complex processes to be broken up into smaller steps
+
+		Types of Functions:
+			.built in functions e.g. len(),del()
+			.user defined functions.
+
+		also called subroutines, procedures, subprograms in other programming languages.
+
+
+		syntax:
+
+		def func_name([parameters]):
+			stments
+
+
+		example:
+
+		def greet(msg):
+			if(len(msg))>0:
+				print("Hey {} long time no see".format(msg))
+			else:
+				print("Hello!!! Life is not that  easy...")
+
+
+		greet("Alekh")
+		greet("")
+		greet() // is there any error as it does not match declaration syntax
+		-------------------------------------------------------
+
+		functions with default parameters.
+		def greet(msg="Guest"):
+			if(len(msg))>0:
+				print("Hey {} long time no see".format(msg))
+			else:
+				print("Hello!!! Life is not that  easy...")
+
+
+		greet("Alekh")
+		greet("")
+		greet() // no error as if no value is supplied then default value will be applied to variable msg
+
+		--------------------------------------------------------------------
+		functions with positional arguments:
+
+		def coursebooking(course,duration,fee):
+			print("your course is {}, ,and fees{}".format(course,fees))
+
+		coursebooking("Python","6 months",5000)
+
+		coursebooking("6 months","Python",5000)
+
+		Solution to above problem :
+		solution is with positional parameters
+		def coursebooking(course,duration,fee):
+			print("your course is {course}, ,and fees{fee}")
+
+		coursebooking("Python","5 Months",6000)
